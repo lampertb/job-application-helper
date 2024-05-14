@@ -4,9 +4,8 @@ import argparse
 from openai import OpenAI
 import os
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
 # Set your OpenAI API key
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def fetch_job_page(url):
     try:
