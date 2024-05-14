@@ -1,43 +1,40 @@
-# applicationHelper
+# Job Application Helper
 
-Job Application Helper
 This script fetches job details from a Greenhouse job application page and generates a custom cover letter using OpenAI's API.
 
-# Features
-Fetches job title, company name, and description from a Greenhouse job application page.
-Uses OpenAI's API to generate a custom cover letter for the job.
+## Features
 
-# Requirements
-Python 3.6 or higher
-requests library
-beautifulsoup4 library
-openai library
-OpenAI API key
+- Fetches job title, company name, and description from a Greenhouse job application page.
+- Uses OpenAI's API to generate a custom cover letter for the job.
 
-# Installation
-Clone the repository:
+## Requirements
 
-sh
-Copy code
-git clone https://github.com/yourusername/job-application-helper.git
-cd job-application-helper
-Install the required libraries:
+- Python 3.6 or higher
+- `requests` library
+- `beautifulsoup4` library
+- `openai` library
+- OpenAI API key
 
-sh
-Copy code
-pip install requests beautifulsoup4 openai
-Set your OpenAI API key as an environment variable:
+## Installation
 
-sh
-Copy code
-export OPENAI_API_KEY='your_openai_api_key'
-Usage
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/job-application-helper.git
+    cd job-application-helper
+    ```
+
+2. Install the required libraries:
+    ```sh
+    pip install requests beautifulsoup4 openai
+    ```
+
+3. Set your OpenAI API key as an environment variable:
+    ```sh
+    export OPENAI_API_KEY='your_openai_api_key'
+    ```
+
+## Usage
+
 Run the script with the URL of a Greenhouse job application page:
-
-sh
-Copy code
-python main.py https://boards.greenhouse.io/figma/jobs/5136933004?gh_src=f4e571c44us
-Example
-sh
-Copy code
+```sh
 python main.py https://boards.greenhouse.io/figma/jobs/5136933004?gh_src=f4e571c44us
